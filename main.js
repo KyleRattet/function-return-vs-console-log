@@ -1,19 +1,30 @@
 //console.log("test");
 
-//return with console.log experiment
-function firstName(str) {
-  return ("Hi " + str);
+//return only(should show nothing in the log when calling the function)
+
+function firstName(first) {
+  return ("Hi " + first);
 }
-firstName("Bob")
 
-// var result = firstName ("Bob");
-// console.log(result);
+firstName("bob");
 
-function lastName (str) {
-  console.log("Hi " + str);
+//console.log only (should show "Hi Builder" when the function is called)
+function lastName (last) {
+  console.log("Hi " + last);
 }
 
 lastName("Builder");
+
+//console.log and return (should show "the" when the function is called)
+
+function middleName(mid) {
+  return (mid);
+}
+
+var result = middleName ("the");
+console.log(result);
+
+
 
 
 //
@@ -73,9 +84,7 @@ lastName("Builder");
 // nothing after return will be actionable
 // */
 //
-// function classGreetingReturn (studentName){
-//   return ("Hi, " + studentName);
-// }
+
 //
 //
 // var result = classGreetingReturn("Steve");
